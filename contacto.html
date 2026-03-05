@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Tiago Rosa">
+        <!--<meta name="description" content="Aqui terá um parágrafo de descrição da página">
+        <meta name="keywords" content="Palavras chave que melhor descrevam a página e os serviços que oferece">-->
+        <meta name="locality" content="Ilha do Pico, Azores, Portugal, Europa">
+
+        <title>Game Place | Contacto</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    
+    <body>
+
+        <header>
+            <a href="index.html"><img src="imagens/logo.png" alt="Logo Games Place" id="logo"></a>
+            <nav aria-label="menu-principal">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="videos.html">Trailers</a></li>
+                    <li><a href="loja.html">Loja</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="pesquisa.html"><i class="fa fa-search"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="aligncenter">
+                <h1>Contacto</h1>
+                <p>Fala connosco! Estamos disponíveis para esclarecer dúvidas, pedidos de assistência ou informações sobre produtos.</p>
+            </section>
+
+            <section class="container-flex" style="background-color:rgb(22,26,34); padding:10px;">
+                <article class="flex2">
+                    <h2>Fala conosco <i class="fa fa-thumbs-up"></i></h2>
+                    <form>
+                        <label for="assunto">Qual o motivo de contacto?</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="jogos">Jogos</option>
+                            <option value="consolas">Consolas</option>
+                            <option value="avaria">Avaria</option>
+                            <option value="retoma">Retoma</option>
+                            <option value="reembolso">Reembolso</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    
+                        <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" pattern="[A-Za-zÀ-ÿ\s'-]{2,50}" placeholder="Nome do remetente" required>
+
+                        <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="Email de resposta à questão" required>
+
+                        <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conta-nos as tuas mágoas"></textarea>
+
+                        <button type="submit"><strong>Enviar</strong></button>
+                    </form>
+                </article>
+            
+                <article class="flex2">
+                    <h2>Ou envia-nos uma carta <i class="fa fa-thumbs-up"></i></h2>
+
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d32045.65065579362!2d-28.535707827848952!3d38.531377998997435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1770837094626!5m2!1spt-PT!2spt" 
+                        width="550" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </article>            
+            </section>
+            <aside>
+                <h3>Horário de Funcionamento do Call-Center</h3>
+                <table>
+                    <thead>
+                        <tr><th>Dia</th><th>Horário</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Segunda a Sexta</td><td>10:00 - 19:00</td></tr>
+                        <tr><td>Sábado</td><td>10:00 - 14:00</td></tr>
+                    </tbody>
+                </table>
+            </aside>
+
+            
+
+</main>
+
+        <footer>
+            <nav aria-label="redes sociais">
+                <ul>
+                    <li><a href="mailto:games_place@mail.com" aria-label="Enviar email"><i class='fa fa-envelope'></i></a></li>
+                    <li><a href="https://www.facebook.com/" arial-label="Facebook"><i class='fa fa-facebook'></i></a></li>
+                    <li><a href="https://www.instagram.com/" aria-label="Instagram"><i class='fa fa-instagram'></i></a></li>
+                    <li><a href="https://wa.me/912345678" aria-label="Contacto telefónico"><i class="fa fa-phone"></i></a></li>
+                </ul>
+            </nav>
+            <div class="termos">
+                <p>&copy; Games Place</p>
+                <i> | </i>
+                <a href="#">Política de Privacidade</a>
+                <i> | </i>
+                <a href="#">Termos de uso</a>
+            </div>
+        </footer>
