@@ -21,7 +21,10 @@
 
         <header>
             <a href="index.html"><img src="imagens/logo.png" alt="Logo Games Place" id="logo"></a>
-            <nav aria-label="menu-principal">
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <i class="fa fa-bars"></i>
+            </button>
+            <nav id="menu-mobile">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
@@ -156,7 +159,16 @@
                 <a href="#">Termos de uso</a>
             </div>
         </footer>
+        <script>
+        const btn = document.querySelector('.menu-toggle');
+        const menu = document.getElementById('menu-mobile');
 
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            const aberto = menu.classList.contains('active');
+            btn.setAttribute('aria-expanded', aberto);
+        });
+    </script>
     </body>
 
 </html>

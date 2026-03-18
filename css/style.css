@@ -135,6 +135,14 @@ footer{
     height:auto;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .termos{
     display:inline-flex;
     align-items:center;
@@ -275,11 +283,26 @@ footer{
         text-align:center;
     }
 
+    header nav{
+        display:none;
+        width:100%;
+    }
+
+    header nav.active{
+        display:block;
+    }
+
     nav ul{
+        display:flex;
         flex-direction:column;
         gap:10px;
         padding:0;
         margin-top:10px;
+    }
+
+    .menu-toggle{
+        display:block;
+        color:rgb(229,231,235);
     }
 
     main{
